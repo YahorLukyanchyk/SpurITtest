@@ -3,7 +3,7 @@ const collapsibleContent = document.querySelector(".collapsible__content").anima
     [
       {
         overflow: "hidden",
-        maxHeight: "50px",
+        maxHeight: "75px",
       },
       {
         overflow: "hidden",
