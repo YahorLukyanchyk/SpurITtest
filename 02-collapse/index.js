@@ -1,13 +1,13 @@
 const collapsibleButton = document.querySelector(".collapsible__button");
-const collapsibleContent = document
-  .querySelector(".collapsible__content")
-  .animate(
+const collapsibleContent = document.querySelector(".collapsible__content").animate(
     [
       {
-        transform: "translateX(0)",
+        overflow: "hidden",
+        maxHeight: "50px",
       },
       {
-        transform: "translateX(-100%)",
+        overflow: "hidden",
+        maxHeight: "0",
       },
     ],
     {
