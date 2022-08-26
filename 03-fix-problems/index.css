@@ -1,22 +1,18 @@
 * {
   margin: 0 auto;
 }
-
 body {
   background: cornsilk;
   font-family: sans-serif;
 }
-
 .article {
   max-width: 680px;
   padding: 24px;
 }
-
 .article__heading {
   margin-bottom: 1.5rem;
   color: palevioletred;
 }
-
 .article__lead {
   font-weight: 700;
   text-transform: uppercase;
@@ -24,11 +20,9 @@ body {
   font-family: serif;
   margin: 16px 0;
 }
-
 .figure {
   margin-top: 16px;
 }
-
 .figure__caption {
   margin: 8px 0;
   font-style: italic;
