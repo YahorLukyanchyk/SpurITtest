@@ -1,13 +1,25 @@
 const collapsibleButton = document.querySelector(".collapsible__button");
-const collapsibleContent = document.querySelector(".collapsible__content").animate(
+const collapsibleButtonActive = document.querySelector(
+  '[class*="__action--visible"]'
+);
+const collapsibleButtonHidden = document.querySelector(
+  '[class*="__action--hidden"]'
+);
+const collapsibleContent = document
+  .querySelector(".collapsible__content")
+  .animate(
     [
       {
         overflow: "hidden",
         maxHeight: "75px",
+        backgroundColor: "#D3D3D3",
+        paddingLeft: "10px",
       },
       {
         overflow: "hidden",
         maxHeight: "0",
+        backgroundColor: "#D3D3D3",
+        paddingLeft: "10px",
       },
     ],
     {
@@ -18,11 +30,18 @@ const collapsibleContent = document.querySelector(".collapsible__content").anima
   );
 
 collapsibleContent.pause();
+collapsibleContent.playbackRate = -1;
 
-collapsibleButton.addEventListener("click", () => {
-  if (collapsibleContent.playState === "paused") {
+collapsibleButtonActive.addEventListener("click", () => {
+  if (collapsibleContent.playbackRate === -1) {
+    collapsibleContent.playbackRate = 1;
     collapsibleContent.play();
-  } else {
-    collapsibleContent.reverse();
+  }
+});
+
+collapsibleButtonHidden.addEventListener("click", () => {
+  if (collapsibleContent.playbackRate === 1) {
+  collapsibleContent.playbackRate = -1;
+  collapsibleContent.play();
   }
 });
