@@ -19,7 +19,7 @@ const collapsibleContent = document
         overflow: "hidden",
         maxHeight: "0",
         backgroundColor: "#D3D3D3",
-        paddingLeft: "10px",
+        padding: "0 10px",
       },
     ],
     {
