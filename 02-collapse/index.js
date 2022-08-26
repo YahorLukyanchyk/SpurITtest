@@ -6,7 +6,6 @@ const collapsibleButtonActive = document.querySelector(
 const collapsibleButtonHidden = document.querySelector(
   '[class*="__action--hidden"]'
 );
-
 const collapsibleContent = document
   .querySelector(".collapsible__content")
   .animate(
