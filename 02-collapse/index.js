@@ -6,7 +6,6 @@ const collapsibleButtonActive = document.querySelector(
 const collapsibleButtonHidden = document.querySelector(
   '[class*="__action--hidden"]'
 );
-
 const collapsibleContent = document
   .querySelector(".collapsible__content")
   .animate(
@@ -29,7 +28,7 @@ const collapsibleContent = document
       fill: "both",
       easing: "ease-out",
     }
-  );
+);
 
 collapsibleContent.pause();
 collapsibleContent.playbackRate = -1;
@@ -52,11 +51,5 @@ function checkPlaybackRate() {
 
 collapsibleButton.addEventListener("click", () => {
   checkPlaybackRate();
-
-  if (collapsibleContent.playState === "paused") {
-    collapsibleContent.reverse();
-  } else {
-    collapsibleContent.reverse();
-  }
+  collapsibleContent.reverse();
 });
-
