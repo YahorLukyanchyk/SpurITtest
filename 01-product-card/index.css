@@ -229,7 +229,7 @@ main {
   color: #2f2f2f;
   flex-grow: 1;
 }
-.btn {
+.item__add-to-cart {
   cursor: pointer;
   font-family: "Arial";
   font-style: normal;
@@ -246,13 +246,13 @@ main {
   transition: 0.2s;
 }
 
-.btn:hover {
+.item__add-to-cart:hover {
   background: #42940f;
   border-color: #42940f;
   color: white;
 }
 
-.btn:active {
+.item__add-to-cart:active {
   background: #1f5200;
   border-color: #1f5200;
   color: white;
@@ -292,7 +292,7 @@ main {
     font-size: 14px;
   }
 
-  .btn {
+  .item__add-to-cart {
     font-size: 14px;
     padding: 6px 0;
   }
@@ -337,7 +337,7 @@ main {
     font-size: 16px;
   }
 
-  .btn {
+  .item__add-to-cart {
     font-size: 18px;
     padding: 10px 0;
   }
@@ -369,7 +369,7 @@ main {
     font-size: 14px;
   }
 
-  .btn {
+  .item__add-to-cart {
     font-size: 14px;
     padding: 6px 0;
   }
