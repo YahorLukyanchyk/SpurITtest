@@ -34,10 +34,6 @@ collapsibleContent.pause();
 collapsibleContent.playbackRate = -1;
 collapsibleButtonHidden.style.display = "none";
 
-collapsibleBlock.style.cssText = "width: 30%;";
-collapsibleButton.style.cssText =
-  "width: 100%; text-align: left; background-color: #1ea0f7; color: white; padding: 10px;";
-
 function checkPlaybackRate() {
   if (collapsibleContent.playbackRate === -1) {
     collapsibleButtonHidden.style.display = "inline";
